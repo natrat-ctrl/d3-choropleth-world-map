@@ -9,11 +9,11 @@ An interactive choropleth map visualizing **annual population growth rates by co
 
 ---
 
-![World Map](Assets/world_map.png)
+![World Map](world_map.png)
 
 | Tooltip — Estonia | Tooltip — Finland |
 |---|---|
-| ![Estonia](Assets/tooltip_Estonia.png) | ![Finland](Assets/tooltip_Finland.png) |
+| ![Estonia](tooltip_Estonia.png) | ![Finland](tooltip_Finland.png) |
 
 ---
 
@@ -30,3 +30,4 @@ Data files are not included in the repo due to size — download them and place 
 
 - **[World Bank — Population Growth (annual %)](https://data.worldbank.org/indicator/SP.POP.GROW)** → save as `world_bank_data.csv`
 - **[Natural Earth — Admin 0 Countries](https://www.naturalearthdata.com/downloads/110m-cultural-vectors/)** → convert to `world-geojson.json` via [mapshaper.org](https://mapshaper.org/)
+
