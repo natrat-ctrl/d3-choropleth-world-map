@@ -9,11 +9,11 @@ An interactive choropleth map visualizing **annual population growth rates by co
 
 ---
 
-![World Map](world_map.png)
+![World Map](Data_map/Assets/world_map.png)
 
 | Tooltip — Estonia | Tooltip — Finland |
 |---|---|
-| ![Estonia](tooltip_Estonia.png) | ![Finland](tooltip_Finland.png) |
+| ![Estonia](Data_map/Assets/tooltip_Estonia.png) | ![Finland](Data_map/Assets/tooltip_Finland.png) |
 
 ---
 
