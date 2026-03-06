@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a.button {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1em;
+      font-weight: bold;
+      color: blue;
+      display: inline-block;
+      padding: 12px 24px;
+      text-align: center;
+      border: 2px solid blue;
+      text-decoration: none;
+      transition: all 0.4s;
+    }
+
+    a.button:hover {
+      color: white;
+      background-color: blue;
+    }
+
+    .barGroup rect:hover {
+      fill: purple;
+    }
+
+    .tooltip {
+      opacity: 0;
+      position: absolute;
+      top: -12px;
+      left: 0;
+      padding: 0.6em 1em;
+      background: #fff;
+      text-align: center;
+      border: 1px solid #ddd;
+      z-index: 10;
+      transition: all 0.2s ease-out;
+      pointer-events: none;
+    }
+
+    .tooltip:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 12px;
+      height: 12px;
+      background: white;
+      border: 1px solid #ddd;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      transform: translate(-50%, 50%) rotate(45deg);
+      transform-origin: center center;
+      z-index: 10;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper" class="wrapper">
+
+    <div id="tooltip" class="tooltip">
+      <div class="tooltip-range">
+        <span id="name"></span>
+      </div>
+      <div class="tooltip-value">
+        <span id="value"></span> days
+      </div>
+    </div>
+
+    <div class="scale">
+      <span class="min" id="min"></span>
+      <span class="scalegradient"></span>
+    </div>
+
+  </div><!-- end #wrapper -->
+
+  <script src="https://d3js.org/d3.v7.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
